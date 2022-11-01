@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My portfolio | Syifa Dzikri Tsani</title>
+    <title>My Portfolio | Syifa Dzikri Tsani</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
@@ -84,8 +84,8 @@
     <!-- Projects -->
     <div id="projects">
       <div class="container">
-        <div class="row text-center myprojects">
-          <div class="col mb-3">
+        <div class="row text-center mb-3 myprojects">
+          <div class="col">
             <h2>My Projects</h2>
           </div>
         </div>
@@ -127,6 +127,38 @@
               <img src="img/projects/img-3.jpg" class="card-img-top" alt="img-3" />
               <div class="card-body">
                 <p class="card-text">Some quick example text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mykeyboards">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My keyboards</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Keychron K2</h4>
+                <img src="img/keyboards/keyboard-1.png" alt="Keychron K2" class="keyboard-img">
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Keychron K2</h4>
+                <img src="img/keyboards/keyboard-1.png" alt="Keychron K2" class="keyboard-img">
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Keychron K2</h4>
+                <img src="img/keyboards/keyboard-1.png" alt="Keychron K2" class="keyboard-img">
+                <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
               </div>
             </div>
           </div>
@@ -331,7 +363,7 @@
 
     <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
     <script>
-      VanillaTilt.init(document.querySelector(".img-profile"), {
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
       max: 25,
       speed: 400
     });
