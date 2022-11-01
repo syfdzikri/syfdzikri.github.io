@@ -149,7 +149,8 @@
             <h2>Gallery</h2>
           </div>
         </div>
-        <div class="row text-center mb-3">
+        <div>
+        <div class="row text-center justify-content-center mb-3">
           <div class="col-md-3">
             <a href="#">
               <img src="img/gallery/gallery-1.jpg" alt="Gallery-1" class="img-fluid gallery-img" />
@@ -192,12 +193,12 @@
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/gallery-9.jpg" alt="Gallery-9" class="img-fluid gallery-img" />
+              <img src="img/gallery/gallery-7.jpg" alt="Gallery-9" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/gallery-7.jpg" alt="Gallery-10" class="img-fluid gallery-img" />
+              <img src="img/gallery/gallery-9.jpg" alt="Gallery-10" class="img-fluid gallery-img" />
             </a>
           </div>
         </div>
@@ -255,6 +256,7 @@
     <!-- Footer -->
     <footer class="text-white text-center pb-5" style="background-color: #008689">
       <p>Created with <i class="bi bi-heart-fill text-danger"></i> <a href="https://www.instagram.com/syfdzikri/" class="text-white fw-bold">Syifa Dzikri Tsani</a></p>
+      <p>Copyright &copy; 2022.</p>
     </footer>
     <!-- Akhir Footer -->
 
@@ -262,6 +264,14 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.duration = 1000;
+      });
+
       AOS.init({
         duration: 1000,
         once: true,
